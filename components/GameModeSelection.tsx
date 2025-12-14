@@ -111,7 +111,7 @@ const GameModeSelection: React.FC<GameModeSelectionProps> = ({
                                 </div>
                                 <div className="bg-white p-3 rounded-lg border border-gray-200">
                                     <div className="font-semibold text-orange-600">GeoGuessr対応国10問モード</div>
-                                    <p>GeoGuessrでプレイ可能な132カ国の国旗からランダムに10問出題されます。実際にGeoGuessrで遭遇する可能性のある国旗を重点的に学習できます。（2025/12/08更新：ベトナム追加）</p>
+                                    <p>GeoGuessrでプレイ可能な132カ国の国旗からランダムに10問出題されます。実際にGeoGuessrで遭遇する可能性のある国旗を重点的に学習できます。（2025/12/14更新）</p>
                                 </div>
                                 <div className="bg-white p-3 rounded-lg border border-gray-200">
                                     <div className="font-semibold text-blue-600">全国旗モード</div>
