@@ -7,10 +7,11 @@ import Timer from './Timer';
 import { codeToRegionMap } from '../data/regionFlags';
 
 const QuizQuestion: React.FC = () => {
-    const { questions, currentQuestionIndex, answerQuestion, goToNextQuestion, gameMode } = useGameContext();
+    const { questions, currentQuestionIndex, answerQuestion, goToNextQuestion, gameMode, resetGame } = useGameContext();
     const [selectedAnswer, setSelectedAnswer] = useState<Flag | null>(null);
     const [showAnswer, setShowAnswer] = useState(false);
     const [countdown, setCountdown] = useState<number | null>(null);
+    const [showExitConfirm, setShowExitConfirm] = useState(false);
 
     useEffect(() => {
         if (showAnswer && countdown !== null) {
@@ -45,13 +46,33 @@ const QuizQuestion: React.FC = () => {
         answerQuestion(option);
     };
 
+    const handleExitGame = () => {
+        setShowExitConfirm(true);
+    };
+
+    const confirmExit = () => {
+        resetGame();
+    };
+
+    const cancelExit = () => {
+        setShowExitConfirm(false);
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
             <div className="card max-w-4xl w-full p-6 mx-auto">
                 {/* ヘッダー部分 */}
                 <div className="flex justify-between items-center mb-6 border-b border-gray-200 pb-4">
-                    <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-medium">
-                        問題 {currentQuestionIndex + 1} / {questions.length}
+                    <div className="flex items-center gap-4">
+                        <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-medium">
+                            問題 {currentQuestionIndex + 1} / {questions.length}
+                        </div>
+                        <button
+                            onClick={handleExitGame}
+                            className="px-3 py-1 text-sm text-red-600 hover:text-red-800 hover:bg-red-50 rounded border border-red-200 hover:border-red-300 transition-colors"
+                        >
+                            中断
+                        </button>
                     </div>
                     <div className="bg-gray-100 px-4 py-2 rounded-lg font-mono text-lg">
                         <Timer />
@@ -182,6 +203,30 @@ const QuizQuestion: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            {/* 中断確認ダイアログ */}
+            {showExitConfirm && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+                        <h3 className="text-lg font-bold mb-4 text-gray-800">ゲームを中断しますか？</h3>
+                        <p className="text-gray-600 mb-6">進行中のゲームは保存されず、モード選択画面に戻ります。</p>
+                        <div className="flex gap-3 justify-end">
+                            <button
+                                onClick={cancelExit}
+                                className="px-4 py-2 text-gray-600 bg-gray-100 hover:bg-gray-200 rounded transition-colors"
+                            >
+                                続ける
+                            </button>
+                            <button
+                                onClick={confirmExit}
+                                className="px-4 py-2 text-white bg-red-600 hover:bg-red-700 rounded transition-colors"
+                            >
+                                中断する
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
