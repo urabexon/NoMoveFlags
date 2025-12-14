@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+'use client';
+
+import React, { createContext, useContext, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { GameResult, Question } from '../utils/gameLogic';
 import type { Flag } from '../data/flags';
@@ -38,7 +40,6 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [isGameActive, setIsGameActive] = useState(false);
     const [startTime, setStartTime] = useState<number | null>(null);
-    const [elapsedTime, setElapsedTime] = useState(0);
 
     const startGame = (mode: string) => {
         setGameMode(mode);
@@ -46,7 +47,6 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
         setCurrentQuestionIndex(0);
         setIsGameActive(true);
         setStartTime(Date.now());
-        setElapsedTime(0);
     };
 
     const resetGame = () => {
@@ -56,7 +56,6 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
         setCurrentQuestionIndex(0);
         setIsGameActive(false);
         setStartTime(null);
-        setElapsedTime(0);
     };
 
     const answerQuestion = (answer: Flag) => {
@@ -74,7 +73,8 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
     };
 
     const updateElapsedTime = (time: number) => {
-        setElapsedTime(time);
+        // 経過時間の更新処理
+        console.log('Elapsed time:', time);
     };
 
     const value: GameContextType = {
