@@ -27,7 +27,7 @@ const GEOGUESSR_COUNTRY_CODES = [
     'AQ', // 南極
     'GS', // サウスジョージア・サウスサンドウィッチ諸島
 
-    // アジア (23カ国)
+    // アジア (24カ国)
     'BD', // バングラデシュ
     'BT', // ブータン
     'IO', // イギリス領インド洋地域
@@ -51,6 +51,7 @@ const GEOGUESSR_COUNTRY_CODES = [
     'LK', // スリランカ
     'TW', // 台湾
     'TH', // タイ
+    'VN', // ベトナム
 
     // 中東 (8カ国)
     'IQ', // イラク
@@ -160,7 +161,7 @@ export const geoguessrFlags: Flag[] = allFlags.filter(flag =>
 export const geoguessrFlagsByRegion = {
     'アフリカ': allFlags.filter(flag => ['BW', 'EG', 'SZ', 'GH', 'KE', 'LS', 'MG', 'ML', 'NA', 'NG', 'RE', 'RW', 'ST', 'SN', 'ZA', 'TZ', 'TN', 'UG'].includes(flag.code)),
     '南極': allFlags.filter(flag => ['AQ', 'GS'].includes(flag.code)),
-    'アジア': allFlags.filter(flag => ['BD', 'BT', 'IO', 'KH', 'CN', 'HK', 'IN', 'ID', 'JP', 'KZ', 'KG', 'LA', 'MO', 'MY', 'MN', 'NP', 'PK', 'PH', 'SG', 'KR', 'LK', 'TW', 'TH'].includes(flag.code)),
+    'アジア': allFlags.filter(flag => ['BD', 'BT', 'IO', 'KH', 'CN', 'HK', 'IN', 'ID', 'JP', 'KZ', 'KG', 'LA', 'MO', 'MY', 'MN', 'NP', 'PK', 'PH', 'SG', 'KR', 'LK', 'TW', 'TH', 'VN'].includes(flag.code)),
     '中東': allFlags.filter(flag => ['IQ', 'IL', 'JO', 'LB', 'OM', 'QA', 'TR', 'AE'].includes(flag.code)),
     'ヨーロッパ': allFlags.filter(flag => ['AL', 'AD', 'AT', 'BY', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FO', 'FI', 'FR', 'DE', 'GI', 'GR', 'HU', 'IS', 'IE', 'IM', 'IT', 'JE', 'LV', 'LI', 'LT', 'LU', 'MT', 'MC', 'ME', 'NL', 'MK', 'NO', 'PL', 'PT', 'RO', 'RU', 'SM', 'RS', 'SK', 'SI', 'ES', 'SJ', 'SE', 'CH', 'UA', 'GB'].includes(flag.code)),
     '北アメリカ': allFlags.filter(flag => ['BM', 'CA', 'CR', 'DO', 'GL', 'GT', 'MQ', 'MX', 'PA', 'PR', 'PM', 'US', 'UM', 'VI'].includes(flag.code)),
