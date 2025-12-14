@@ -130,7 +130,7 @@ const GameModeSelection: React.FC<GameModeSelectionProps> = ({
                                 をもとに作成しています。
                             </p>
                             <p className="text-sm text-gray-600">
-                                GeoGuessr対応国データは、2025年7月6日時点の
+                                GeoGuessr対応国データは、作成日2025年12月14日時点の
                                 （<a href="https://www.plonkit.net/guide" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Plonk It - GeoGuessr Guide</a>）
                                 をもとに作成しています。
                             </p>
