@@ -231,4 +231,4 @@ const QuizQuestion: React.FC = () => {
     );
 };
 
-export default QuizQuestion
+export default QuizQuestion;
