@@ -17,7 +17,35 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NoMoveFlags",
-  description: "NoMoveFlags is a flag quiz app for GeoGuessr's No Move / Country Streak mode.",
+  description:
+    "NoMoveFlags is a flag quiz app for GeoGuessr's No Move / Country Streak mode.",
+
+  openGraph: {
+    title: "NoMoveFlags",
+    description:
+      "A fast flag quiz for GeoGuessr No Move / Country Streak players.",
+    url: "https://nomoveflags.pages.dev",
+    siteName: "NoMoveFlags",
+    images: [
+      {
+        url: "https://guess-national-flag.pages.dev/ogp-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "NoMoveFlags – GeoGuessr Flag Quiz",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "NoMoveFlags",
+    description:
+      "A fast flag quiz for GeoGuessr No Move / Country Streak players.",
+    images: ["https://guess-national-flag.pages.dev/ogp-image.svg"],
+  },
+
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
