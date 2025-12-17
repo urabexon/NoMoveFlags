@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "start": "Démarrer",
+    "goal": "Objectif",
+    "continue": "Continuer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "back": "← Retour à l'accueil",
+    "backToTop": "← Retour au début",
+    "returnToMenu": "Retourner à la sélection du mode de jeu",
+    "playAgain": "Rejouer",
+    "other": "Autre",
+    "uncategorized": "Non classé",
+    "countries": " pays/régions"
+  },
+  "gameMode": {
+    "title": "Quiz de drapeaux pour GeoGuessr",
+    "description": "Quiz de drapeaux conçu pour le jeu de géographie 'GeoGuessr'. Identifiez le bon pays ou région à partir du drapeau affiché ou du code pays.",
+    "flag10": "Mode quiz 10 drapeaux",
+    "iso10": "Mode quiz 10 codes ISO",
+    "geoguessr10": "Mode quiz 10 pays GeoGuessr",
+    "allFlags": "Mode tous les drapeaux",
+    "memorization": "Mode mémorisation",
+    "help": {
+      "show": "Afficher l'aide",
+      "hide": "Masquer l'aide",
+      "howToPlay": "Comment jouer",
+      "modes": "Modes de jeu",
+      "data": "À propos des données"
+    }
+  },
+  "quiz": {
+    "question": "Question",
+    "exit": "Quitter",
+    "flagQuestion": "À quel pays/région appartient ce drapeau ?",
+    "isoQuestion": "À quel pays/région appartient ce code ISO (domaine) ?",
+    "correct": "Correct !",
+    "incorrect": "Incorrect",
+    "nextQuestion": "secondes jusqu'à la prochaine question",
+    "correctAnswer": "La bonne réponse était \"{code} : {name}\".",
+    "confirmExit": "Voulez-vous quitter le jeu ?",
+    "confirmExitMessage": "La partie en cours ne sera pas sauvegardée et vous reviendrez à l'écran de sélection du mode.",
+    "exitGame": "Quitter le jeu"
+  },
+  "results": {
+    "title": "Résultats",
+    "currentScore": "Score actuel",
+    "grade": "Note",
+    "correctCount": "Correct :",
+    "accuracy": "Précision :",
+    "timeSpent": "Temps écoulé :",
+    "averageTime": "Temps moyen par question :",
+    "questionReview": "Révision des questions",
+    "userAnswer": "Réponse :",
+    "pastScores": "Scores précédents",
+    "date": "Date",
+    "score": "Score",
+    "time": "Temps",
+    "clearHistory": "Effacer l'historique",
+    "clearConfirm": "Êtes-vous sûr de vouloir supprimer tout l'historique ?",
+    "noPastScores": "Aucun score précédent disponible",
+    "statistics": "Statistiques",
+    "playCount": "Nombre de parties :",
+    "bestScore": "Meilleur score :",
+    "bestTime": "Meilleur temps pour le score le plus élevé :",
+    "noRecord": "Aucun enregistrement"
+  },
+  "memorization": {
+    "title": "Mode mémorisation des drapeaux",
+    "description": "Mémorisez les drapeaux et noms de pays organisés par région",
+    "showGeoguessrOnly": "Afficher uniquement les pays GeoGuessr",
+    "showingGeoguessrOnly": "Affichage des pays GeoGuessr uniquement",
+    "selectRegion": "Sélectionner une région",
+    "showAll": "Tout afficher",
+    "allGeoguessrCountries": "Tous les pays GeoGuessr",
+    "allFlags": "Tous les drapeaux",
+    "flagAlt": " drapeau",
+    "regionFlags": " Drapeaux",
+    "noFlags": "Aucun drapeau enregistré dans cette région"
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "La page que vous cherchez n'existe pas ou a peut-être été déplacée.",
+    "suggestion": "Que diriez-vous de vous vider l'esprit avec un quiz de drapeaux ?",
+    "goHome": "🏁 Retourner à l'accueil"
+  },
+  "about": {
+    "title": "À propos de NoMoveFlags",
+    "purpose": "🌍 Objectif de cette application",
+    "features": "🎯 Fonctionnalités",
+    "usage": "🚀 Comment utiliser",
+    "learningTips": "💡 Méthodes d'apprentissage recommandées",
+    "dataInfo": "📊 À propos des données"
+  }
+}

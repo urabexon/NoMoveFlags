@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "start": "Start",
+    "goal": "Goal",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "back": "← Back to Home",
+    "backToTop": "← Back to Top",
+    "returnToMenu": "Return to Game Mode Selection",
+    "playAgain": "Play Again",
+    "other": "Other",
+    "uncategorized": "Uncategorized",
+    "countries": " countries/regions"
+  },
+  "gameMode": {
+    "title": "Flag Quiz for GeoGuessr",
+    "description": "Flag quiz designed for the geography quiz game 'GeoGuessr'. Identify the correct country or region from the displayed flag or country code.",
+    "flag10": "10 Flag Quiz Mode",
+    "iso10": "10 ISO Code Quiz Mode", 
+    "geoguessr10": "GeoGuessr Countries 10 Quiz Mode",
+    "allFlags": "All Flags Mode",
+    "memorization": "Memorization Mode",
+    "help": {
+      "show": "Show Help",
+      "hide": "Hide Help",
+      "howToPlay": "How to Play",
+      "modes": "Game Modes",
+      "data": "About Data"
+    }
+  },
+  "quiz": {
+    "question": "Question",
+    "exit": "Exit",
+    "flagQuestion": "Which country/region does this flag belong to?",
+    "isoQuestion": "Which country/region does this ISO code (domain) belong to?",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "nextQuestion": "seconds until next question",
+    "correctAnswer": "The correct answer was \"{code}: {name}\".",
+    "confirmExit": "Do you want to exit the game?",
+    "confirmExitMessage": "The current game will not be saved and you will return to the mode selection screen.",
+    "exitGame": "Exit Game"
+  },
+  "results": {
+    "title": "Results",
+    "currentScore": "Current Score",
+    "grade": "Grade",
+    "correctCount": "Correct:",
+    "accuracy": "Accuracy:",
+    "timeSpent": "Time Spent:",
+    "averageTime": "Average Time per Question:",
+    "questionReview": "Question Review",
+    "userAnswer": "Answer:",
+    "pastScores": "Past Scores",
+    "date": "Date",
+    "score": "Score",
+    "time": "Time",
+    "clearHistory": "Clear History",
+    "clearConfirm": "Are you sure you want to delete all history?",
+    "noPastScores": "No past scores available",
+    "statistics": "Statistics",
+    "playCount": "Play Count:",
+    "bestScore": "Best Score:",
+    "bestTime": "Best Time for Highest Score:",
+    "noRecord": "No Record"
+  },
+  "memorization": {
+    "title": "Flag Memorization Mode",
+    "description": "Memorize flags and country names organized by region",
+    "showGeoguessrOnly": "Show GeoGuessr Countries Only",
+    "showingGeoguessrOnly": "Showing GeoGuessr Countries Only",
+    "selectRegion": "Select Region",
+    "showAll": "Show All",
+    "allGeoguessrCountries": "All GeoGuessr Countries",
+    "allFlags": "All Flags",
+    "flagAlt": " flag",
+    "regionFlags": " Flags",
+    "noFlags": "No flags registered in this region"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or may have been moved.",
+    "suggestion": "How about clearing your mind with a flag quiz?",
+    "goHome": "🏁 Return to Home"
+  },
+  "about": {
+    "title": "About NoMoveFlags",
+    "purpose": "🌍 Purpose of This App",
+    "features": "🎯 Features",
+    "usage": "🚀 How to Use",
+    "learningTips": "💡 Recommended Learning Methods",
+    "dataInfo": "📊 About Data"
+  }
+}

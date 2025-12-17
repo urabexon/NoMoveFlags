@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "start": "スタート",
+    "goal": "ゴール",
+    "continue": "続ける",
+    "cancel": "キャンセル",
+    "delete": "削除する",
+    "back": "← トップページに戻る",
+    "backToTop": "← トップに戻る",
+    "returnToMenu": "ゲームモード選択に戻る",
+    "playAgain": "もう一度プレイする",
+    "other": "その他",
+    "uncategorized": "未分類",
+    "countries": "カ国/地域"
+  },
+  "gameMode": {
+    "title": "GeoGuessr向け国旗当てクイズ",
+    "description": "地理クイズゲーム「GeoGuessr」のための国旗当てクイズです。表示される国旗または国コードから正しい国または地域を選んでください。",
+    "flag10": "国旗10問モード",
+    "iso10": "ISOコード10問モード",
+    "geoguessr10": "GeoGuessr対応国10問モード",
+    "allFlags": "全国旗モード",
+    "memorization": "暗記モード",
+    "help": {
+      "show": "ヘルプを表示",
+      "hide": "ヘルプを閉じる",
+      "howToPlay": "遊び方",
+      "modes": "ゲームモード",
+      "data": "データについて"
+    }
+  },
+  "quiz": {
+    "question": "問題",
+    "exit": "中断",
+    "flagQuestion": "この国旗はどこの国/地域ですか？",
+    "isoQuestion": "このISOコード(ドメイン)はどこの国/地域ですか？",
+    "correct": "正解！",
+    "incorrect": "不正解",
+    "nextQuestion": "秒後に次の問題へ",
+    "correctAnswer": "正解は「{code}: {name}」でした。",
+    "confirmExit": "ゲームを中断しますか？",
+    "confirmExitMessage": "進行中のゲームは保存されず、モード選択画面に戻ります。",
+    "exitGame": "中断する"
+  },
+  "results": {
+    "title": "結果",
+    "currentScore": "今回のスコア",
+    "grade": "評価",
+    "correctCount": "正解数:",
+    "accuracy": "正答率:",
+    "timeSpent": "所要時間:",
+    "averageTime": "平均回答時間:",
+    "questionReview": "問題の正誤",
+    "userAnswer": "回答:",
+    "pastScores": "過去のスコア",
+    "date": "日時",
+    "score": "スコア",
+    "time": "時間",
+    "clearHistory": "履歴をクリア",
+    "clearConfirm": "本当に全ての履歴を削除しますか？",
+    "noPastScores": "過去のスコアはありません",
+    "statistics": "統計",
+    "playCount": "プレイ回数:",
+    "bestScore": "最高スコア:",
+    "bestTime": "最高スコア最速タイム:",
+    "noRecord": "記録なし"
+  },
+  "memorization": {
+    "title": "国旗暗記モード",
+    "description": "地域ごとに分類された国旗と国名を暗記できます",
+    "showGeoguessrOnly": "GeoGuessr対応国のみ表示",
+    "showingGeoguessrOnly": "GeoGuessr対応国のみ表示中",
+    "selectRegion": "地域を選択",
+    "showAll": "すべて表示",
+    "allGeoguessrCountries": "GeoGuessr対応国一覧",
+    "allFlags": "すべての国旗一覧",
+    "flagAlt": "の国旗",
+    "regionFlags": "の国旗一覧",
+    "noFlags": "この地域に登録されている国旗はありません"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動した可能性があります。",
+    "suggestion": "国旗クイズで頭をスッキリさせませんか？",
+    "goHome": "🏁 トップページに戻る"
+  },
+  "about": {
+    "title": "NoMoveFlagsについて",
+    "purpose": "🌍 このアプリの目的",
+    "features": "🎯 特徴",
+    "usage": "🚀 使い方",
+    "learningTips": "💡 おすすめの学習方法",
+    "dataInfo": "📊 データについて"
+  }
+}
